@@ -1,0 +1,344 @@
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background: #202731;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.hero {
+    /*background: #010134;*/
+    background-image: url('images/heroimage2.jpg');
+    background-size: cover; /* Cover the entire view area of the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Update the URL */
+}
+
+.red {
+    background: #dd3f31;
+
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.oxfordblue {
+    background: #132239;
+}
+
+.yaleblue {
+    background: #253E60;
+}
+
+.yinmnblue {
+    background: #375A88;
+}
+
+
+.herowave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.herowave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.herowave .shape-fill {
+    fill: #132239;
+}
+
+.whowearecurve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.whowearecurve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 49px;
+}
+
+.whowearecurve .shape-fill {
+    fill: #253E60;
+}
+
+.whatwedocurve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.whatwedocurve svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 46px;
+}
+
+.whatwedocurve .shape-fill {
+    fill: #375A88;
+}
+
+.custom-card {
+    background: #604725;
+    display: flex; /* Make the card a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 350px; /* Example height */
+    /*border: 1px solid;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden; /* In case content overflows, hides it */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card-content {
+    width: 100%; /* Use full width of parent */
+    text-align: center; /* Center text horizontally */
+}
+
+.custom-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; /* For centering the button */
+    margin-top: 20px; /* Space above the button */
+}
+
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly within the card-body */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.custom-btn:hover {
+    background: linear-gradient(90deg, #3AB287, #117A65);
+    transform: translateY(-2px);
+}
+
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(58, 178, 135, 0.5);
+}
+
+
+
+.app-gallery {
+    background-color: #375A88;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.app-gallery h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.app-gallery p {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.apps {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+    justify-content: flex-start;
+    overflow-x: auto; /* Horizontal scroll */
+    gap: 15px; /* Spacing between cards */
+    padding-bottom: 15px; /* To ensure the scrollbar doesn't overlap content */
+}
+
+.app-card {
+    background: #886537;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    width: calc(33.33% - 30px);
+    flex: 0 0 calc(25% - 30px);
+}
+
+.app-card img {
+    width: 100%;
+    height: auto;
+}
+
+.app-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.app-card p {
+    color: #888;
+    padding: 0 15px 20px;
+}
+
+/* Responsive design starts here */
+
+/* For tablets: */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .app-card {
+        width: calc(50% - 30px); /* Two cards in a row for tablet sizes */
+    }
+}
+
+/* For mobile phones: */
+@media (max-width: 768px) {
+    .app-gallery {
+        padding: 50px 5%; /* Reduced padding for mobile */
+    }
+
+    .app-card {
+        width: calc(100% - 30px); /* One card per row for mobile sizes */
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .app-card {
+        flex: 0 0 calc(40% - 30px); /* Adjust the width for tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .app-card {
+        flex: 0 0 calc(70% - 30px); /* Adjust the width for mobile */
+    }
+}
+
+.contact-section {
+    background-color: #4875B0;
+    padding: 50px 10%;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.name-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    flex: 1;  /* Allows the input groups within the name-group to be flexible */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #B08348;  /* Complimentary color for labels */
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 1em;
+}
+
+.message-group textarea {
+    min-height: 100px;
+}
+
+.submit-button {
+    background-color: #B08348; /* Complimentary color for the button */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #946535;  /* A darker shade of the complimentary color for hover effect */
+}
+
+
+.custom-footer {
+            background-color: #5A91D7;
+            padding: 50px 0;
+            color: #fff;
+        }
+
+        .custom-footer h5 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .custom-footer a {
+            color: #fff;
+            margin-bottom: 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .custom-footer a:hover {
+            color: #B08348; /* Complimentary color as per your previous request */
+            text-decoration: none;
+        }
+
+        .social-icon {
+            font-weight: bold;
+        }
