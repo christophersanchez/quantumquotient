@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/quantumquotient/static/css/main.251e944e.css",
+    "main.js": "/quantumquotient/static/js/main.bee25f34.js",
+    "static/media/FontsFree-Net-SFProText-Semibold.ttf": "/quantumquotient/static/media/FontsFree-Net-SFProText-Semibold.fee27977166efaac0a2a.ttf",
+    "static/media/OpenSauceOne-SemiBold.ttf": "/quantumquotient/static/media/OpenSauceOne-SemiBold.9c9c812f7f7a89e67d5f.ttf",
+    "static/media/OpenSauceOne-Bold.ttf": "/quantumquotient/static/media/OpenSauceOne-Bold.b61d766d8e29bb5614f0.ttf",
+    "static/media/OpenSauceOne-Regular.ttf": "/quantumquotient/static/media/OpenSauceOne-Regular.ad899c4b043bde24150b.ttf",
+    "index.html": "/quantumquotient/index.html",
+    "main.251e944e.css.map": "/quantumquotient/static/css/main.251e944e.css.map",
+    "main.bee25f34.js.map": "/quantumquotient/static/js/main.bee25f34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.251e944e.css",
+    "static/js/main.bee25f34.js"
+  ]
+}
